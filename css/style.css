@@ -134,7 +134,23 @@ label {
 .nav {
   background-color: greenyellow;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 2 / -1; }
+  grid-row: 2 / -1;
+  padding: 1.5rem; }
+  .nav__hamburger > span {
+    background-color: #444;
+    display: block;
+    height: 0.2rem;
+    transform-origin: 12px 2px;
+    transition: all 0.2s;
+    width: 5rem; }
+    .nav__hamburger > span:not(:last-child) {
+      margin-bottom: 0.7rem; }
+  .nav__hamburger.open > span:first-child {
+    transform: rotate(45deg); }
+  .nav__hamburger.open > span:nth-child(2) {
+    opacity: 0; }
+  .nav__hamburger.open > span:last-child {
+    transform: rotate(-45deg); }
 
 .works {
   border: black double 5px;
