@@ -1,0 +1,32 @@
+.contact {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(../img/header.jpg);
+  border: black double 5px;
+  grid-column: center-start / center-end;
+  justify-self: center;
+  padding: 5rem 10rem;
+
+  &__form-message {
+    font-family: $font-headings;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+  }
+}
+
+form {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: 20rem minmax(max-content, 50rem);
+}
+
+label {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+//perhaps put border around all of the others to make it easier to distinguish
+//social signs instead of jaime freestone

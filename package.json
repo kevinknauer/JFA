@@ -1,0 +1,14 @@
+{
+  "name": "jfa",
+  "version": "1.0.0",
+  "description": "Jaime Freestone artist website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Kevin Knauer",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

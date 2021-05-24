@@ -1,0 +1,39 @@
+.header {
+  display: grid;
+
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: full-start / sidebar-end;
+  grid-row: 1 / 2;
+
+  &__nav {
+    align-self: center;
+    display: grid;
+    gap: 10rem;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    justify-self: stretch;
+    margin: 0 auto;
+  }
+
+  &__links {
+    backdrop-filter: blur(3px);
+    border: white double 5px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  &__link {
+    color: white;
+    font-size: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 3.5rem;
+    }
+  }
+}

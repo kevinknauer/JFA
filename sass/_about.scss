@@ -1,0 +1,27 @@
+.about {
+  &__text {
+    align-content: center;
+    border: black double 5px;
+    display: grid;
+    grid-column: full-start / col-end 4;
+    justify-items: center;
+    margin-top: 10rem;
+    padding: 5rem;
+  }
+
+  &__paragraph {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+  }
+
+  &__picture {
+    grid-column: col-start 5 / full-end;
+    margin-top: 10rem;
+  }
+
+  &__img {
+    border-radius: 50%;
+    height: 50rem;
+    margin: 4rem;
+  }
+}
